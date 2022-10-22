@@ -1,5 +1,5 @@
 {
-    "name": "GeorgeFabish.Tools",
+    "name": "com.george.fabish.tools",
     "rootNamespace": "GeorgeFabish",
     "references": [],
     "includePlatforms": [],

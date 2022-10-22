@@ -7,7 +7,7 @@ namespace GeorgeFabish.Editor
 {
     public class ScriptAssetGenerator
     {
-        private static readonly string _templateFolder = Path.Combine("Packages", "com.georgefabish.tools", "Editor","ScriptTemplates");
+        private static readonly string _templateFolder = Path.Combine("Packages", "com.george.fabish.tools", "Editor","ScriptTemplates");
         private static readonly string _emptyClassTemplatePath = Path.Combine(_templateFolder, "EmptyClass.txt");
         private static readonly string _emptyInterfaceTemplatePath = Path.Combine(_templateFolder, "EmptyInterface.txt");
 #if UNITY_EDITOR
