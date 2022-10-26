@@ -9,6 +9,7 @@ namespace GeorgeFabish.Editor
     {
         private static readonly string _templateFolder = Path.Combine("Packages", "com.george.fabish.tools", "Editor", "ScriptTemplates");
         private static readonly string _emptyClassTemplatePath = Path.Combine(_templateFolder, "EmptyClass.txt");
+        private static readonly string _emptySOTemplatePath = Path.Combine(_templateFolder, "ScriptableObject.txt");
         private static readonly string _emptyInterfaceTemplatePath = Path.Combine(_templateFolder, "Interface.txt");
         private static readonly string _singletonTemplatePath = Path.Combine(_templateFolder, "Singleton.txt");
 #if UNITY_EDITOR
@@ -17,6 +18,13 @@ namespace GeorgeFabish.Editor
         {
             string filePath = GetFilePathFromUser("Create Empty C# Class", "EmptyClass");
             CreateFile(filePath, _emptyClassTemplatePath);
+
+        }
+        [MenuItem("Assets/Script Templates/Scriptable Object")]
+        public static void CreateScriptableObject()
+        {
+            string filePath = GetFilePathFromUser("Create Scriptable Object", "EmptyClass");
+            CreateFile(filePath, _emptySOTemplatePath);
 
         }
         [MenuItem("Assets/Script Templates/C# Interface")]
